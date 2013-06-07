@@ -5,9 +5,14 @@
   </div>
   <br>
   <p>
-  <%= link_to 'Adoption Info', captioned_image.adoption_info_url, class: 'btn btn-info' %>
+  <%= link_to 'Adoption Info', captioned_image.adoption_info_url, class: 'btn btn-large btn-warning' %>
   <br />
   <%# TODO: extract into presenter %>
-  <%= link_to 'Tweet', 'https://twitter.com/share', class: "twitter-share-button", data: { lang: 'en', size: 'large', dnt: 'true', text: captioned_image.title, hashtags: 'adoptaLOL', url: captioned_image_url(captioned_image) } %>
+  <div class='social-share'>
+    <span class='st_facebook_vcount' displayText='Facebook'></span>
+    <span class='st_twitter_vcount' displayText='Tweet'></span>
+    <span class='st_pinterest_vcount' displayText='Pinterest'></span>
+    <span class='st_email_vcount' displayText='Email'></span>
+  </div>
   </p>
 </article>
