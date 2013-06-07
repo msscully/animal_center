@@ -9,10 +9,10 @@
   <br />
   <%# TODO: extract into presenter %>
   <div class='social-share'>
-    <span class='st_facebook_vcount' displayText='Facebook'></span>
-    <span class='st_twitter_vcount' displayText='Tweet'></span>
-    <span class='st_pinterest_vcount' displayText='Pinterest'></span>
-    <span class='st_email_vcount' displayText='Email'></span>
+    <span class='st_facebook_vcount' displayText='Facebook' st_title='<%= captioned_image.title %>' st_url='<%= captioned_image_url(captioned_image) %>'></span>
+    <span class='st_twitter_vcount' displayText='Tweet' st_title='<%= captioned_image.title %>' st_url='<%= captioned_image_url(captioned_image) %>' st_msg="#adoptaLOL"></span>
+    <span class='st_pinterest_vcount' displayText='Pinterest' st_title='<%= captioned_image.title %>' st_url='<%= captioned_image_url(captioned_image) %>'></span>
+    <span class='st_email_vcount' displayText='Email' st_title='<%= captioned_image.title %>' st_url='<%= captioned_image_url(captioned_image) %>'></span>
   </div>
   </p>
 </article>
